@@ -24,7 +24,7 @@ const useResource = baseUrl => {
   }, [baseUrl])
 
   const create = resource => {
-    // ...
+    return axios.post(baseUrl, resource)
   }
 
   const service = {
